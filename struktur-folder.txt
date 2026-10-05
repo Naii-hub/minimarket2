@@ -1,0 +1,74 @@
+minimarket2/
+│
+├── app/
+│   ├── Http/
+│   │   ├── Controllers/
+│   │   │   ├── AdminController.php
+│   │   │   ├── CategoryController.php
+│   │   │   ├── KasirController.php
+│   │   │   ├── ProductController.php
+│   │   │   ├── ProfileController.php
+│   │   │   └── TransactionController.php
+│   │   │
+│   │   └── Middleware/
+│   │       └── RoleMiddleware.php
+│   │
+│   ├── Models/
+│   │   ├── Category.php
+│   │   ├── Product.php
+│   │   ├── Transaction.php
+│   │   └── User.php
+│   │
+│   └── View/
+│       └── Components/
+│           └── AppLayout.php
+│
+├── bootstrap/
+│   └── app.php
+│
+├── database/
+│   ├── migrations/
+│   │   ├── create_users_table.php
+│   │   ├── add_role_to_users_table.php
+│   │   ├── create_products_table.php
+│   │   ├── create_categories_table.php
+│   │   └── create_transactions_table.php
+│   │
+│   └── seeders/
+│       ├── DatabaseSeeder.php
+│       └── UserSeeder.php
+│
+├── resources/
+│   └── views/
+│       ├── admin/
+│       │   └── dashboard.blade.php
+│       │
+│       ├── kasir/
+│       │   └── dashboard.blade.php
+│       │
+│       ├── products/
+│       │   ├── index.blade.php
+│       │   ├── create.blade.php
+│       │   ├── edit.blade.php
+│       │   └── show.blade.php
+│       │
+│       ├── categories/
+│       │   ├── index.blade.php
+│       │   ├── create.blade.php
+│       │   ├── edit.blade.php
+│       │   └── show.blade.php
+│       │
+│       ├── transactions/
+│       │   ├── index.blade.php
+│       │   └── create.blade.php
+│       │
+│       ├── components/
+│       │   └── app-layout.blade.php
+│       │
+│       └── layouts/
+│           ├── app.blade.php
+│           └── navigation.blade.php
+│
+└── routes/
+    ├── web.php
+    └── auth.php
